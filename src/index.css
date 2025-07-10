@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.bgLogo{
+    background: linear-gradient(90deg,#4c74f4,#8614c8);
+}
+.TextbgLogo{
+    background: linear-gradient(90deg,#4c74f4,#8614c8);
+    background-clip: text;
+    color: transparent;
+}
+.inter{
+    font-family: "inter",sans-serif;
+}
+
+.testAnim{
+  animation: circleAnim ease-in-out 5s alternate-reverse infinite; 
+ 
+}
+
+@keyframes circleAnim {
+  0%{
+    transform: translate3d(-200px,300px,40px);
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  95%{
+opacity: 0;
+  }
+  
+  100%{
+    transform: translate3d(20px,40px,10px);
+    opacity: 0;
+  }
+}
+
+.instantText{
+    background: linear-gradient(90deg,#FAC915,#F97516);
+    color: transparent;
+    background-clip: text;
+}
+
+
+
