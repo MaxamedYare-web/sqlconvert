@@ -12,7 +12,7 @@ export const HeaderPage = ()=>{
  return(  <>
 <header className="py-4 sm:p-3 sm:py-0 bg-[#0c0c0e] relative w-full text-white">
     <div className="flex justify-around relative w-full items-center">
-       <div className="flex gap-2 text-2xl font-bold items-center">
+       <div className="flex px-3 gap-2 text-2xl font-bold items-center">
          <GoDatabase className="bgLogo p-2 rounded-full text-4xl text-white font-bold" />
         <h1 className="TextbgLogo font-bold">SQLConvert</h1>
        </div>
@@ -29,7 +29,7 @@ export const HeaderPage = ()=>{
         
     <div className="flex items-center gap-5  justify-end w-full text-[20px]">
         <FaRegMoon />
-       <div className="lg:hidden px-5">
+       <div className="lg:hidden px-2">
          {
             isClickMenu ? ( <IoMdCloseCircleOutline className="text-3xl" onClick={()=>setIsClickMenu(false)} />):
             ( <FaBars className="text-3xl" onClick={()=>setIsClickMenu(true)}/>)
@@ -43,8 +43,7 @@ export const HeaderPage = ()=>{
 <div className={`bg-red-500 absolute duration-600 
       ${isClickMenu ? "w-[80%] opacity-100 "  :"w-[0%] opacity-0 "} `}>
          <nav className={`flex flex-col top-[148%]  
-        sm:top-[8%] z-10  
-             
+        sm:top-[8%] z-10   
               p-5 h-screen bg-[#0c0c0e] lg:hidden gap-2 font-semibold text-[17px]`}>
             <NavLink className="p-2  rounded duration-500
             hover:bg-gradient-to-bl  from-[#8614c8] to-[#4c74f4]">Home</NavLink>
