@@ -5,21 +5,21 @@ export const HomePage = () => {
     <>
       <section className="h-screen flex bg-gradient-to-tl from-[#b60192] to-[#113ff6] justify-center items-center">
         
-             <p className="testAnim  w-[10px] h-[10px]  absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim left-[20%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+             <p className="testAnim   sm:flex w-[10px] h-[10px]  absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex left-[20%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
            
-            <p className="testAnim right-[20%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim hidden sm:flex right-[20%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
            
-            <p className="testAnim bottom-0 right-[5%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 right-[10%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 right-[2%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim hidden sm:flex bottom-0 right-[5%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim hidden sm:flex bottom-0 right-[10%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim hidden sm:flex bottom-0 right-[2%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
            
-            <p className="testAnim bottom-0 left-[35%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 left-[30%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 left-[20%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 left-[35%] w-[5px] h-[5px] top-[0%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 left-[40%] w-[5px] h-[5px] top-[10%] absolute bg-gray-400 rounded-full"></p>
-            <p className="testAnim bottom-0 left-[50%] w-[10px] h-[10px] top-[15%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex bottom-0 left-[35%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex bottom-0 left-[30%] w-[5px] h-[5px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex bottom-0 left-[20%] w-[10px] h-[10px] top-[35%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex bottom-0 left-[35%] w-[5px] h-[5px] top-[0%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex bottom-0 left-[40%] w-[5px] h-[5px] top-[10%] absolute bg-gray-400 rounded-full"></p>
+            <p className="testAnim  sm:flex bottom-0 left-[50%] w-[10px] h-[10px] top-[15%] absolute bg-gray-400 rounded-full"></p>
            
 
 

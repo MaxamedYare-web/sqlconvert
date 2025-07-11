@@ -35,8 +35,9 @@ export const HeaderPage = ()=>{
         }
        </div>
          {/* mobile menu */}
-        <nav className={`flex flex-col top-[7.95%] right-0 sm:top-[8%] z-10 
-             duration-600 ${isClickMenu ? "w-[80%]"  :"w-0 opacity-0"}
+        <nav className={`flex flex-col top-[7.95%] right-0 
+        sm:top-[8%] z-10 
+             duration-600 ${isClickMenu ? "w-[80%] opacity-100"  :"w-[0%] opacity-0"}
               p-5 h-screen bg-[#0c0c0e] absolute lg:hidden gap-2 font-semibold text-[17px]`}>
             <NavLink className="p-2  rounded duration-500
             hover:bg-gradient-to-bl  from-[#8614c8] to-[#4c74f4]">Home</NavLink>
