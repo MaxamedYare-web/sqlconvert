@@ -10,8 +10,8 @@ export const HeaderPage = ()=>{
  const [isClickMenu,setIsClickMenu] = useState(false)
 
  return(  <>
-<header className="p-3 bg-[#0c0c0e] text-white">
-    <div className="flex justify-around items-center">
+<header className="py-4 sm:p-3 sm:py-0 bg-[#0c0c0e] relative w-full text-white">
+    <div className="flex justify-around relative w-full items-center">
        <div className="flex gap-2 text-2xl font-bold items-center">
          <GoDatabase className="bgLogo p-2 rounded-full text-4xl text-white font-bold" />
         <h1 className="TextbgLogo font-bold">SQLConvert</h1>
@@ -26,19 +26,26 @@ export const HeaderPage = ()=>{
             <NavLink>Excel to JSON</NavLink>
             <NavLink>Services</NavLink>
         </nav>
-    <div className="flex items-center gap-5 text-[20px]">
+        
+    <div className="flex items-center gap-5  justify-end w-full text-[20px]">
         <FaRegMoon />
-       <div className="lg:hidden">
+       <div className="lg:hidden px-5">
          {
             isClickMenu ? ( <IoMdCloseCircleOutline className="text-3xl" onClick={()=>setIsClickMenu(false)} />):
             ( <FaBars className="text-3xl" onClick={()=>setIsClickMenu(true)}/>)
         }
+        
        </div>
-         {/* mobile menu */}
-        <nav className={`flex flex-col top-[7.95%] right-0 
-        sm:top-[8%] z-10 
-             duration-600 ${isClickMenu ? "w-[80%] opacity-100"  :"w-[0%] opacity-0"}
-              p-5 h-screen bg-[#0c0c0e] absolute lg:hidden gap-2 font-semibold text-[17px]`}>
+        
+    </div>
+    </div>
+       {/* mobile menu */}
+<div className={`bg-red-500 absolute duration-600 
+      ${isClickMenu ? "w-[80%] opacity-100 "  :"w-[0%] opacity-0 "} `}>
+         <nav className={`flex flex-col top-[148%]  
+        sm:top-[8%] z-10  
+             
+              p-5 h-screen bg-[#0c0c0e] lg:hidden gap-2 font-semibold text-[17px]`}>
             <NavLink className="p-2  rounded duration-500
             hover:bg-gradient-to-bl  from-[#8614c8] to-[#4c74f4]">Home</NavLink>
             <NavLink className="p-2  rounded duration-500
@@ -54,8 +61,7 @@ export const HeaderPage = ()=>{
             <NavLink className="p-2  rounded duration-500
             hover:bg-gradient-to-bl  from-[#8614c8] to-[#4c74f4]"> Services</NavLink>
         </nav>
-    </div>
-    </div>
+</div>
 </header>
 
 
