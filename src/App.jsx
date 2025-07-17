@@ -6,10 +6,10 @@ function App() {
 
 
   return (
-    <>
+    <div className='w-full'>
     <HeaderPage/>
    <HomePage/>
-    </>
+    </div>
   )
 }
 
